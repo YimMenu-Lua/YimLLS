@@ -215,6 +215,10 @@ function ENTITY.GET_ENTITY_HEIGHT_ABOVE_GROUND(entity) end
 ---@param rightVector Vector3
 ---@param upVector Vector3
 ---@param position Vector3
+---@return Vector3 forwardVector
+---@return Vector3 rightVector
+---@return Vector3 upVector
+---@return Vector3 position
 function ENTITY.GET_ENTITY_MATRIX(entity, forwardVector, rightVector, upVector, position) end
 
 
@@ -249,6 +253,10 @@ function ENTITY.GET_ENTITY_PITCH(entity) end
 ---@param y float
 ---@param z float
 ---@param w float
+---@return float x
+---@return float y
+---@return float z
+---@return float w
 function ENTITY.GET_ENTITY_QUATERNION(entity, x, y, z, w) end
 
 
@@ -270,7 +278,7 @@ function ENTITY.GET_ENTITY_ROTATION_VELOCITY(entity) end
 
 ---@param entity Entity
 ---@param script ScrHandle
----@return string
+---@return ScrHandle script
 function ENTITY.GET_ENTITY_SCRIPT(entity, script) end
 
 
@@ -969,7 +977,14 @@ function ENTITY.SET_ENTITY_PROOFS(entity, bulletProof, fireProof, explosionProof
 ---@param steamProof BOOL
 ---@param p7 BOOL
 ---@param drownProof BOOL
----@return boolean
+---@return BOOL bulletProof
+---@return BOOL fireProof
+---@return BOOL explosionProof
+---@return BOOL collisionProof
+---@return BOOL meleeProof
+---@return BOOL steamProof
+---@return BOOL p7
+---@return BOOL drownProof
 function ENTITY.GET_ENTITY_PROOFS(entity, bulletProof, fireProof, explosionProof, collisionProof, meleeProof, steamProof, p7, drownProof) end
 
 

@@ -27,6 +27,8 @@ function INTERIOR.GET_INTERIOR_HEADING(interior) end
 ---@param interior Interior
 ---@param position Vector3
 ---@param nameHash Hash
+---@return Vector3 position
+---@return Hash nameHash
 function INTERIOR.GET_INTERIOR_LOCATION_AND_NAMEHASH(interior, position, nameHash) end
 
 

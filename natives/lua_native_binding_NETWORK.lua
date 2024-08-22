@@ -224,7 +224,7 @@ function NETWORK.NETWORK_TRANSITION_FINISH(p0, p1, p2) end
 
 
 ---@param loadingState int
----@return boolean
+---@return int loadingState
 function NETWORK.NETWORK_CAN_ACCESS_MULTIPLAYER(loadingState) end
 
 
@@ -411,6 +411,9 @@ function NETWORK.NETWORK_CLEAR_FOLLOWERS() end
 ---@param hours int
 ---@param minutes int
 ---@param seconds int
+---@return int hours
+---@return int minutes
+---@return int seconds
 function NETWORK.NETWORK_GET_GLOBAL_MULTIPLAYER_CLOCK(hours, minutes, seconds) end
 
 
@@ -1461,39 +1464,39 @@ function NETWORK.PARTICIPANT_ID_TO_INT() end
 
 ---@param player Player
 ---@param weaponHash Hash
----@return Player
+---@return Hash weaponHash
 function NETWORK.NETWORK_GET_KILLER_OF_PLAYER(player, weaponHash) end
 
 
 ---@param netId int
 ---@param weaponHash Hash
----@return Player
+---@return Hash weaponHash
 function NETWORK.NETWORK_GET_DESTROYER_OF_NETWORK_ID(netId, weaponHash) end
 
 
 ---@param entity Entity
 ---@param weaponHash Hash
----@return Player
+---@return Hash weaponHash
 function NETWORK.NETWORK_GET_DESTROYER_OF_ENTITY(entity, weaponHash) end
 
 
 ---@param player Player
 ---@param entity Entity
 ---@param p2 int
----@return boolean
+---@return int p2
 function NETWORK.NETWORK_GET_ASSISTED_KILL_OF_ENTITY(player, entity, p2) end
 
 
 ---@param player Player
 ---@param entity Entity
 ---@param p2 int
----@return boolean
+---@return int p2
 function NETWORK.NETWORK_GET_ASSISTED_DAMAGE_OF_ENTITY(player, entity, p2) end
 
 
 ---@param player Player
 ---@param weaponHash Hash
----@return Entity
+---@return Hash weaponHash
 function NETWORK.NETWORK_GET_ENTITY_KILLER_OF_PLAYER(player, weaponHash) end
 
 
@@ -1781,7 +1784,7 @@ function NETWORK.NETWORK_PLAYER_GET_NAME(player) end
 
 ---@param player Player
 ---@param userID int
----@return string
+---@return int userID
 function NETWORK.NETWORK_PLAYER_GET_USERID(player, userID) end
 
 
@@ -2165,6 +2168,8 @@ function NETWORK.NETWORK_DISABLE_VOICE_BANDWIDTH_RESTRICTION(player) end
 ---@param p0 Player
 ---@param p1 float
 ---@param p2 float
+---@return float p1
+---@return float p2
 function NETWORK.NETWORK_GET_MUTE_COUNT_FOR_PLAYER(p0, p1, p2) end
 
 
@@ -2291,25 +2296,25 @@ function NETWORK.NETWORK_CLAN_ANY_DOWNLOAD_MEMBERSHIP_PENDING() end
 
 
 ---@param p0 int
----@return boolean
+---@return int p0
 function NETWORK.NETWORK_CLAN_REMOTE_MEMBERSHIPS_ARE_IN_CACHE(p0) end
 
 
 ---@param p0 int
----@return int
+---@return int p0
 function NETWORK.NETWORK_CLAN_GET_MEMBERSHIP_COUNT(p0) end
 
 
 ---@param p0 int
 ---@param p1 Any
----@return boolean
+---@return int p0
 function NETWORK.NETWORK_CLAN_GET_MEMBERSHIP_VALID(p0, p1) end
 
 
 ---@param p0 int
 ---@param clanMembership number
 ---@param p2 int
----@return boolean
+---@return int p0
 function NETWORK.NETWORK_CLAN_GET_MEMBERSHIP(p0, clanMembership, p2) end
 
 
@@ -2336,7 +2341,7 @@ function NETWORK.NETWORK_CLAN_HAS_CREWINFO_METADATA_BEEN_RECEIVED() end
 
 ---@param netHandle number
 ---@param txdName char
----@return boolean
+---@return char txdName
 function NETWORK.NETWORK_CLAN_GET_EMBLEM_TXD_NAME(netHandle, txdName) end
 
 
@@ -3020,6 +3025,8 @@ function NETWORK.NETWORK_CANCEL_RESPAWN_SEARCH() end
 ---@param randomInt int
 ---@param coordinates Vector3
 ---@param heading float
+---@return Vector3 coordinates
+---@return float heading
 function NETWORK.NETWORK_GET_RESPAWN_RESULT(randomInt, coordinates, heading) end
 
 
@@ -3233,14 +3240,14 @@ function NETWORK.NETWORK_DOES_TUNABLE_EXIST(tunableContext, tunableName) end
 ---@param tunableContext string
 ---@param tunableName string
 ---@param value int
----@return boolean
+---@return int value
 function NETWORK.NETWORK_ACCESS_TUNABLE_INT(tunableContext, tunableName, value) end
 
 
 ---@param tunableContext string
 ---@param tunableName string
 ---@param value float
----@return boolean
+---@return float value
 function NETWORK.NETWORK_ACCESS_TUNABLE_FLOAT(tunableContext, tunableName, value) end
 
 
@@ -3263,28 +3270,28 @@ function NETWORK.NETWORK_ACCESS_TUNABLE_MODIFICATION_DETECTION_CLEAR() end
 ---@param tunableContext Hash
 ---@param tunableName Hash
 ---@param value int
----@return boolean
+---@return int value
 function NETWORK.NETWORK_ACCESS_TUNABLE_INT_HASH(tunableContext, tunableName, value) end
 
 
 ---@param contextHash Hash
 ---@param nameHash Hash
 ---@param value int
----@return boolean
+---@return int value
 function NETWORK.NETWORK_ACCESS_TUNABLE_INT_MODIFICATION_DETECTION_REGISTRATION_HASH(contextHash, nameHash, value) end
 
 
 ---@param tunableContext Hash
 ---@param tunableName Hash
 ---@param value float
----@return boolean
+---@return float value
 function NETWORK.NETWORK_ACCESS_TUNABLE_FLOAT_HASH(tunableContext, tunableName, value) end
 
 
 ---@param contextHash Hash
 ---@param nameHash Hash
 ---@param value float
----@return boolean
+---@return float value
 function NETWORK.NETWORK_ACCESS_TUNABLE_FLOAT_MODIFICATION_DETECTION_REGISTRATION_HASH(contextHash, nameHash, value) end
 
 
@@ -3297,7 +3304,7 @@ function NETWORK.NETWORK_ACCESS_TUNABLE_BOOL_HASH(tunableContext, tunableName) e
 ---@param contextHash Hash
 ---@param nameHash Hash
 ---@param value BOOL
----@return boolean
+---@return BOOL value
 function NETWORK.NETWORK_ACCESS_TUNABLE_BOOL_MODIFICATION_DETECTION_REGISTRATION_HASH(contextHash, nameHash, value) end
 
 
@@ -4122,7 +4129,7 @@ function NETWORK.NETWORK_HAS_ROS_PRIVILEGE(index) end
 ---@param privilege int
 ---@param banType int
 ---@param timeData number
----@return boolean
+---@return int banType
 function NETWORK.NETWORK_HAS_ROS_PRIVILEGE_END_DATE(privilege, banType, timeData) end
 
 

@@ -85,6 +85,12 @@ function CLOCK.GET_MILLISECONDS_PER_GAME_MINUTE() end
 ---@param hour int
 ---@param minute int
 ---@param second int
+---@return int year
+---@return int month
+---@return int day
+---@return int hour
+---@return int minute
+---@return int second
 function CLOCK.GET_POSIX_TIME(year, month, day, hour, minute, second) end
 
 
@@ -94,6 +100,12 @@ function CLOCK.GET_POSIX_TIME(year, month, day, hour, minute, second) end
 ---@param hour int
 ---@param minute int
 ---@param second int
+---@return int year
+---@return int month
+---@return int day
+---@return int hour
+---@return int minute
+---@return int second
 function CLOCK.GET_UTC_TIME(year, month, day, hour, minute, second) end
 
 
@@ -103,6 +115,12 @@ function CLOCK.GET_UTC_TIME(year, month, day, hour, minute, second) end
 ---@param hour int
 ---@param minute int
 ---@param second int
+---@return int year
+---@return int month
+---@return int day
+---@return int hour
+---@return int minute
+---@return int second
 function CLOCK.GET_LOCAL_TIME(year, month, day, hour, minute, second) end
 
 

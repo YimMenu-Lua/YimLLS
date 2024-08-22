@@ -45,6 +45,9 @@ function PLAYER.CHANGE_PLAYER_PED(player, ped, p2, resetDamage) end
 ---@param r int
 ---@param g int
 ---@param b int
+---@return int r
+---@return int g
+---@return int b
 function PLAYER.GET_PLAYER_RGB_COLOUR(player, r, g, b) end
 
 
@@ -304,7 +307,7 @@ function PLAYER.IS_PLAYER_TARGETTING_ENTITY(player, entity) end
 
 ---@param player Player
 ---@param entity Entity
----@return boolean
+---@return Entity entity
 function PLAYER.GET_PLAYER_TARGET_ENTITY(player, entity) end
 
 
@@ -321,7 +324,7 @@ function PLAYER.IS_PLAYER_FREE_AIMING_AT_ENTITY(player, entity) end
 
 ---@param player Player
 ---@param entity Entity
----@return boolean
+---@return Entity entity
 function PLAYER.GET_ENTITY_PLAYER_IS_FREE_AIMING_AT(player, entity) end
 
 
@@ -1000,6 +1003,9 @@ function PLAYER.SET_PLAYER_PARACHUTE_SMOKE_TRAIL_COLOR(player, r, g, b) end
 ---@param r int
 ---@param g int
 ---@param b int
+---@return int r
+---@return int g
+---@return int b
 function PLAYER.GET_PLAYER_PARACHUTE_SMOKE_TRAIL_COLOR(player, r, g, b) end
 
 

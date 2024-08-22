@@ -57,7 +57,7 @@ function NETSHOPPING.NET_GAMESERVER_REFRESH_SERVER_CATALOG() end
 
 
 ---@param state int
----@return boolean
+---@return int state
 function NETSHOPPING.NET_GAMESERVER_RETRIEVE_CATALOG_REFRESH_STATUS(state) end
 
 
@@ -66,7 +66,7 @@ function NETSHOPPING.NET_GAMESERVER_INIT_SESSION() end
 
 
 ---@param p0 int
----@return boolean
+---@return int p0
 function NETSHOPPING.NET_GAMESERVER_RETRIEVE_INIT_SESSION_STATUS(p0) end
 
 
@@ -80,12 +80,12 @@ function NETSHOPPING.NET_GAMESERVER_START_SESSION_PENDING() end
 
 
 ---@param p0 int
----@return boolean
+---@return int p0
 function NETSHOPPING.NET_GAMESERVER_RETRIEVE_START_SESSION_STATUS(p0) end
 
 
 ---@param p0 int
----@return boolean
+---@return int p0
 function NETSHOPPING.NET_GAMESERVER_RETRIEVE_SESSION_ERROR_CODE(p0) end
 
 
@@ -120,7 +120,8 @@ function NETSHOPPING.NET_GAMESERVER_TRANSACTION_IN_PROGRESS() end
 
 ---@param p0 int
 ---@param p1 BOOL
----@return boolean
+---@return int p0
+---@return BOOL p1
 function NETSHOPPING.NET_GAMESERVER_GET_SESSION_STATE_AND_STATUS(p0, p1) end
 
 
@@ -128,7 +129,7 @@ function NETSHOPPING.NET_GAMESERVER_GET_SESSION_STATE_AND_STATUS(p0, p1) end
 ---@param categoryHash Hash
 ---@param actionHash Hash
 ---@param flags int
----@return boolean
+---@return int transactionId
 function NETSHOPPING.NET_GAMESERVER_BASKET_START(transactionId, categoryHash, actionHash, flags) end
 
 
@@ -167,7 +168,7 @@ function NETSHOPPING.NET_GAMESERVER_CHECKOUT_START(transactionId) end
 ---@param actionTypeHash Hash
 ---@param value int
 ---@param flags int
----@return boolean
+---@return int transactionId
 function NETSHOPPING.NET_GAMESERVER_BEGIN_SERVICE(transactionId, categoryHash, itemHash, actionTypeHash, value, flags) end
 
 

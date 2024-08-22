@@ -63,7 +63,7 @@ function WEAPON.SET_CURRENT_PED_WEAPON(ped, weaponHash, bForceInHand) end
 ---@param ped Ped
 ---@param weaponHash Hash
 ---@param p2 BOOL
----@return boolean
+---@return Hash weaponHash
 function WEAPON.GET_CURRENT_PED_WEAPON(ped, weaponHash, p2) end
 
 
@@ -87,7 +87,7 @@ function WEAPON.SET_CURRENT_PED_VEHICLE_WEAPON(ped, weaponHash) end
 
 ---@param ped Ped
 ---@param weaponHash Hash
----@return boolean
+---@return Hash weaponHash
 function WEAPON.GET_CURRENT_PED_VEHICLE_WEAPON(ped, weaponHash) end
 
 
@@ -247,7 +247,7 @@ function WEAPON.GET_MAX_AMMO_IN_CLIP(ped, weaponHash, p2) end
 ---@param ped Ped
 ---@param weaponHash Hash
 ---@param ammo int
----@return boolean
+---@return int ammo
 function WEAPON.GET_AMMO_IN_CLIP(ped, weaponHash, ammo) end
 
 
@@ -261,14 +261,14 @@ function WEAPON.SET_AMMO_IN_CLIP(ped, weaponHash, ammo) end
 ---@param ped Ped
 ---@param weaponHash Hash
 ---@param ammo int
----@return boolean
+---@return int ammo
 function WEAPON.GET_MAX_AMMO(ped, weaponHash, ammo) end
 
 
 ---@param ped Ped
 ---@param ammoTypeHash Hash
 ---@param ammo int
----@return boolean
+---@return int ammo
 function WEAPON.GET_MAX_AMMO_BY_TYPE(ped, ammoTypeHash, ammo) end
 
 
@@ -313,7 +313,7 @@ function WEAPON.GET_PED_ORIGINAL_AMMO_TYPE_FROM_WEAPON(ped, weaponHash) end
 
 ---@param ped Ped
 ---@param coords Vector3
----@return boolean
+---@return Vector3 coords
 function WEAPON.GET_PED_LAST_WEAPON_IMPACT_COORD(ped, coords) end
 
 
@@ -679,7 +679,7 @@ function WEAPON.SET_PLAYER_TARGETTABLE_FOR_AIR_DEFENCE_SPHERE(player, zoneId, en
 ---@param z float
 ---@param radius float
 ---@param outZoneId int
----@return boolean
+---@return int outZoneId
 function WEAPON.IS_AIR_DEFENCE_SPHERE_IN_AREA(x, y, z, radius, outZoneId) end
 
 

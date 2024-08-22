@@ -186,21 +186,21 @@ function STATS.STAT_SET_CURRENT_POSIX_TIME(statName, p1) end
 ---@param statHash Hash
 ---@param outValue int
 ---@param p2 int
----@return boolean
+---@return int outValue
 function STATS.STAT_GET_INT(statHash, outValue, p2) end
 
 
 ---@param statHash Hash
 ---@param outValue float
 ---@param p2 Any
----@return boolean
+---@return float outValue
 function STATS.STAT_GET_FLOAT(statHash, outValue, p2) end
 
 
 ---@param statHash Hash
 ---@param outValue BOOL
 ---@param p2 Any
----@return boolean
+---@return BOOL outValue
 function STATS.STAT_GET_BOOL(statHash, outValue, p2) end
 
 
@@ -223,7 +223,9 @@ function STATS.STAT_GET_STRING(statHash, p1) end
 ---@param outY float
 ---@param outZ float
 ---@param p4 Any
----@return boolean
+---@return float outX
+---@return float outY
+---@return float outZ
 function STATS.STAT_GET_POS(statName, outX, outY, outZ, p4) end
 
 
@@ -232,7 +234,7 @@ function STATS.STAT_GET_POS(statName, outX, outY, outZ, p4) end
 ---@param p2 int
 ---@param p3 int
 ---@param p4 Any
----@return boolean
+---@return int outValue
 function STATS.STAT_GET_MASKED_INT(statHash, outValue, p2, p3, p4) end
 
 
@@ -268,7 +270,7 @@ function STATS.STAT_COMMUNITY_SYNCH_IS_PENDING() end
 ---@param statName Hash
 ---@param p1 int
 ---@param outValue float
----@return boolean
+---@return float outValue
 function STATS.STAT_COMMUNITY_GET_HISTORY(statName, p1, outValue) end
 
 
@@ -464,7 +466,8 @@ function STATS.PLAYSTATS_RACE_CHECKPOINT(p0, p1, p2, p3, p4) end
 
 ---@param playerAccountId int
 ---@param posixTime int
----@return boolean
+---@return int playerAccountId
+---@return int posixTime
 function STATS.PLAYSTATS_CREATE_MATCH_HISTORY_ID_2(playerAccountId, posixTime) end
 
 
@@ -1008,7 +1011,7 @@ function STATS.STAT_SAVE_MIGRATION_CONSUME_CONTENT(contentId, srcPlatform, srcGa
 
 
 ---@param p0 int
----@return int
+---@return int p0
 function STATS.STAT_GET_SAVE_MIGRATION_CONSUME_CONTENT_STATUS(p0) end
 
 
@@ -1033,7 +1036,7 @@ function STATS.STAT_STOP_RECORD_STAT() end
 
 
 ---@param value float
----@return boolean
+---@return float value
 function STATS.STAT_GET_RECORDED_VALUE(value) end
 
 
@@ -1078,7 +1081,7 @@ function STATS.STAT_GET_CHALLENGE_FLYING_DIST() end
 
 
 ---@param outValue float
----@return boolean
+---@return float outValue
 function STATS.STAT_GET_FLYING_ALTITUDE(outValue) end
 
 

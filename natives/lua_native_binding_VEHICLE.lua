@@ -373,6 +373,9 @@ function VEHICLE.SET_VEHICLE_CUSTOM_PRIMARY_COLOUR(vehicle, r, g, b) end
 ---@param r int
 ---@param g int
 ---@param b int
+---@return int r
+---@return int g
+---@return int b
 function VEHICLE.GET_VEHICLE_CUSTOM_PRIMARY_COLOUR(vehicle, r, g, b) end
 
 
@@ -396,6 +399,9 @@ function VEHICLE.SET_VEHICLE_CUSTOM_SECONDARY_COLOUR(vehicle, r, g, b) end
 ---@param r int
 ---@param g int
 ---@param b int
+---@return int r
+---@return int g
+---@return int b
 function VEHICLE.GET_VEHICLE_CUSTOM_SECONDARY_COLOUR(vehicle, r, g, b) end
 
 
@@ -542,6 +548,8 @@ function VEHICLE.REMOVE_VEHICLE_STUCK_CHECK(vehicle) end
 ---@param vehicle Vehicle
 ---@param colorPrimary int
 ---@param colorSecondary int
+---@return int colorPrimary
+---@return int colorSecondary
 function VEHICLE.GET_VEHICLE_COLOURS(vehicle, colorPrimary, colorSecondary) end
 
 
@@ -568,7 +576,8 @@ function VEHICLE.GET_LAST_PED_IN_VEHICLE_SEAT(vehicle, seatIndex) end
 ---@param vehicle Vehicle
 ---@param lightsOn BOOL
 ---@param highbeamsOn BOOL
----@return boolean
+---@return BOOL lightsOn
+---@return BOOL highbeamsOn
 function VEHICLE.GET_VEHICLE_LIGHTS_STATE(vehicle, lightsOn, highbeamsOn) end
 
 
@@ -1478,6 +1487,8 @@ function VEHICLE.SET_VEHICLE_MAY_BE_USED_BY_GOTO_POINT_ANY_MEANS(vehicle, p1) en
 ---@param p0 BOOL
 ---@param modelHash Hash
 ---@param successIndicator int
+---@return Hash modelHash
+---@return int successIndicator
 function VEHICLE.GET_RANDOM_VEHICLE_MODEL_IN_MEMORY(p0, modelHash, successIndicator) end
 
 
@@ -1561,6 +1572,8 @@ function VEHICLE.SET_VEHICLE_EXTRA_COLOURS(vehicle, pearlescentColor, wheelColor
 ---@param vehicle Vehicle
 ---@param pearlescentColor int
 ---@param wheelColor int
+---@return int pearlescentColor
+---@return int wheelColor
 function VEHICLE.GET_VEHICLE_EXTRA_COLOURS(vehicle, pearlescentColor, wheelColor) end
 
 
@@ -2145,7 +2158,8 @@ function VEHICLE.SET_DISABLE_VERTICAL_FLIGHT_MODE_TRANSITION(vehicle, toggle) en
 ---@param p6 Any
 ---@param p7 Any
 ---@param p8 Any
----@return boolean
+---@return Vector3 outVec
+---@return Vector3 outVec1
 function VEHICLE.GENERATE_VEHICLE_CREATION_POS_FROM_PATHS(outVec, p1, outVec1, p3, p4, p5, p6, p7, p8) end
 
 
@@ -2212,7 +2226,7 @@ function VEHICLE.NETWORK_CAP_EMPTY_CROWDING_VEHICLES_REMOVAL(p0) end
 
 ---@param vehicle Vehicle
 ---@param trailer Vehicle
----@return boolean
+---@return Vehicle trailer
 function VEHICLE.GET_VEHICLE_TRAILER_VEHICLE(vehicle, trailer) end
 
 
@@ -2439,12 +2453,17 @@ function VEHICLE.SET_VEHICLE_MOD_COLOR_2(vehicle, paintType, color) end
 ---@param paintType int
 ---@param color int
 ---@param pearlescentColor int
+---@return int paintType
+---@return int color
+---@return int pearlescentColor
 function VEHICLE.GET_VEHICLE_MOD_COLOR_1(vehicle, paintType, color, pearlescentColor) end
 
 
 ---@param vehicle Vehicle
 ---@param paintType int
 ---@param color int
+---@return int paintType
+---@return int color
 function VEHICLE.GET_VEHICLE_MOD_COLOR_2(vehicle, paintType, color) end
 
 
@@ -2572,6 +2591,9 @@ function VEHICLE.SET_VEHICLE_TYRE_SMOKE_COLOR(vehicle, r, g, b) end
 ---@param r int
 ---@param g int
 ---@param b int
+---@return int r
+---@return int g
+---@return int b
 function VEHICLE.GET_VEHICLE_TYRE_SMOKE_COLOR(vehicle, r, g, b) end
 
 
@@ -2593,6 +2615,9 @@ function VEHICLE.GET_NUM_VEHICLE_WINDOW_TINTS() end
 ---@param r int
 ---@param g int
 ---@param b int
+---@return int r
+---@return int g
+---@return int b
 function VEHICLE.GET_VEHICLE_COLOR(vehicle, r, g, b) end
 
 
@@ -2821,7 +2846,7 @@ function VEHICLE.SET_VEHICLE_SHOOT_AT_TARGET(driver, entity, xTarget, yTarget, z
 
 ---@param vehicle Vehicle
 ---@param entity Entity
----@return boolean
+---@return Entity entity
 function VEHICLE.GET_VEHICLE_LOCK_ON_TARGET(vehicle, entity) end
 
 
@@ -3253,7 +3278,7 @@ function VEHICLE.SET_VEHICLE_EXCLUSIVE_DRIVER(vehicle, ped, index) end
 ---@param ped Ped
 ---@param vehicle Vehicle
 ---@param outIndex int
----@return boolean
+---@return int outIndex
 function VEHICLE.IS_PED_EXCLUSIVE_DRIVER_OF_VEHICLE(ped, vehicle, outIndex) end
 
 
@@ -3311,6 +3336,9 @@ function VEHICLE.SET_VEHICLE_NEON_INDEX_COLOUR(vehicle, index) end
 ---@param r int
 ---@param g int
 ---@param b int
+---@return int r
+---@return int g
+---@return int b
 function VEHICLE.GET_VEHICLE_NEON_COLOUR(vehicle, r, g, b) end
 
 
@@ -3357,6 +3385,8 @@ function VEHICLE.SET_VEHICLE_BODY_HEALTH(vehicle, value) end
 ---@param vehicle Vehicle
 ---@param out1 Vector3
 ---@param out2 Vector3
+---@return Vector3 out1
+---@return Vector3 out2
 function VEHICLE.GET_VEHICLE_SIZE(vehicle, out1, out2) end
 
 
@@ -4117,7 +4147,8 @@ function VEHICLE.GET_VEHICLE_MAX_EXHAUST_BONE_COUNT_() end
 ---@param index int
 ---@param boneIndex int
 ---@param axisX BOOL
----@return boolean
+---@return int boneIndex
+---@return BOOL axisX
 function VEHICLE.GET_VEHICLE_EXHAUST_BONE_(vehicle, index, boneIndex, axisX) end
 
 

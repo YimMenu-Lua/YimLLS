@@ -272,7 +272,7 @@ function HUD.END_TEXT_COMMAND_THEFEED_POST_AWARD(textureDict, textureName, rpBon
 ---@param R int
 ---@param G int
 ---@param B int
----@return int
+---@return int p2
 function HUD.END_TEXT_COMMAND_THEFEED_POST_CREWTAG(p0, p1, p2, p3, isLeader, unk0, clanDesc, R, G, B) end
 
 
@@ -287,7 +287,7 @@ function HUD.END_TEXT_COMMAND_THEFEED_POST_CREWTAG(p0, p1, p2, p3, isLeader, unk
 ---@param R int
 ---@param G int
 ---@param B int
----@return int
+---@return int p2
 function HUD.END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME(p0, p1, p2, p3, isLeader, unk0, clanDesc, playerName, R, G, B) end
 
 
@@ -739,6 +739,10 @@ function HUD.UPDATE_RADAR_ZOOM_TO_BLIP() end
 ---@param g int
 ---@param b int
 ---@param a int
+---@return int r
+---@return int g
+---@return int b
+---@return int a
 function HUD.GET_HUD_COLOUR(hudColorIndex, r, g, b, a) end
 
 
@@ -1826,7 +1830,8 @@ function HUD.CLEAR_REMINDER_MESSAGE() end
 ---@param worldZ float
 ---@param screenX float
 ---@param screenY float
----@return int
+---@return float screenX
+---@return float screenY
 function HUD.GET_HUD_SCREEN_POSITION_FROM_WORLD_POSITION(worldX, worldY, worldZ, screenX, screenY) end
 
 
@@ -2296,19 +2301,26 @@ function HUD.SET_SAVEGAME_LIST_UNIQUE_ID(p0) end
 
 ---@param lastItemMenuId int
 ---@param selectedItemUniqueId int
+---@return int lastItemMenuId
+---@return int selectedItemUniqueId
 function HUD.GET_MENU_TRIGGER_EVENT_DETAILS(lastItemMenuId, selectedItemUniqueId) end
 
 
 ---@param lastItemMenuId int
 ---@param selectedItemMenuId int
 ---@param selectedItemUniqueId int
+---@return int lastItemMenuId
+---@return int selectedItemMenuId
+---@return int selectedItemUniqueId
 function HUD.GET_MENU_LAYOUT_CHANGED_EVENT_DETAILS(lastItemMenuId, selectedItemMenuId, selectedItemUniqueId) end
 
 
 ---@param r int
 ---@param g int
 ---@param b int
----@return boolean
+---@return int r
+---@return int g
+---@return int b
 function HUD.GET_PM_PLAYER_CREW_COLOR(r, g, b) end
 
 
@@ -2329,7 +2341,7 @@ function HUD.GET_CHARACTER_MENU_PED_INT_STAT(p0, p1, p2) end
 ---@param outValue int
 ---@param mask int
 ---@param p3 BOOL
----@return boolean
+---@return int outValue
 function HUD.GET_MENU_PED_MASKED_INT_STAT(statHash, outValue, mask, p3) end
 
 
@@ -2344,20 +2356,20 @@ function HUD.GET_CHARACTER_MENU_PED_MASKED_INT_STAT(statHash, outValue, p2, mask
 
 ---@param statHash Hash
 ---@param outValue float
----@return boolean
+---@return float outValue
 function HUD.GET_MENU_PED_FLOAT_STAT(statHash, outValue) end
 
 
 ---@param statHash float
 ---@param outValue float
 ---@param p2 BOOL
----@return boolean
+---@return float outValue
 function HUD.GET_CHARACTER_MENU_PED_FLOAT_STAT(statHash, outValue, p2) end
 
 
 ---@param statHash Hash
 ---@param outValue BOOL
----@return boolean
+---@return BOOL outValue
 function HUD.GET_MENU_PED_BOOL_STAT(statHash, outValue) end
 
 

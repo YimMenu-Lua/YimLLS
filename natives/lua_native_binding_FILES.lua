@@ -125,6 +125,9 @@ function FILES.GET_SHOP_PED_APPAREL_VARIANT_PROP_COUNT(propHash) end
 ---@param nameHash Hash
 ---@param enumValue int
 ---@param componentType int
+---@return Hash nameHash
+---@return int enumValue
+---@return int componentType
 function FILES.GET_VARIANT_COMPONENT(componentHash, variantComponentIndex, nameHash, enumValue, componentType) end
 
 
@@ -133,6 +136,9 @@ function FILES.GET_VARIANT_COMPONENT(componentHash, variantComponentIndex, nameH
 ---@param nameHash Hash
 ---@param enumValue int
 ---@param anchorPoint int
+---@return Hash nameHash
+---@return int enumValue
+---@return int anchorPoint
 function FILES.GET_VARIANT_PROP(componentHash, variantPropIndex, nameHash, enumValue, anchorPoint) end
 
 
@@ -151,6 +157,9 @@ function FILES.GET_SHOP_PED_APPAREL_FORCED_PROP_COUNT(componentHash) end
 ---@param nameHash Hash
 ---@param enumValue int
 ---@param componentType int
+---@return Hash nameHash
+---@return int enumValue
+---@return int componentType
 function FILES.GET_FORCED_COMPONENT(componentHash, forcedComponentIndex, nameHash, enumValue, componentType) end
 
 
@@ -159,6 +168,9 @@ function FILES.GET_FORCED_COMPONENT(componentHash, forcedComponentIndex, nameHas
 ---@param nameHash Hash
 ---@param enumValue int
 ---@param anchorPoint int
+---@return Hash nameHash
+---@return int enumValue
+---@return int anchorPoint
 function FILES.GET_FORCED_PROP(componentHash, forcedPropIndex, nameHash, enumValue, anchorPoint) end
 
 

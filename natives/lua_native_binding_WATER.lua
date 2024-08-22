@@ -23,7 +23,7 @@ WATER = {}
 ---@param y float
 ---@param z float
 ---@param height float
----@return boolean
+---@return float height
 function WATER.GET_WATER_HEIGHT(x, y, z, height) end
 
 
@@ -31,7 +31,7 @@ function WATER.GET_WATER_HEIGHT(x, y, z, height) end
 ---@param y float
 ---@param z float
 ---@param height float
----@return boolean
+---@return float height
 function WATER.GET_WATER_HEIGHT_NO_WAVES(x, y, z, height) end
 
 
@@ -42,7 +42,7 @@ function WATER.GET_WATER_HEIGHT_NO_WAVES(x, y, z, height) end
 ---@param y2 float
 ---@param z2 float
 ---@param result Vector3
----@return boolean
+---@return Vector3 result
 function WATER.TEST_PROBE_AGAINST_WATER(x1, y1, z1, x2, y2, z2, result) end
 
 
@@ -54,7 +54,7 @@ function WATER.TEST_PROBE_AGAINST_WATER(x1, y1, z1, x2, y2, z2, result) end
 ---@param z2 float
 ---@param flags int
 ---@param waterHeight float
----@return int
+---@return float waterHeight
 function WATER.TEST_PROBE_AGAINST_ALL_WATER(x1, y1, z1, x2, y2, z2, flags, waterHeight) end
 
 
@@ -63,7 +63,7 @@ function WATER.TEST_PROBE_AGAINST_ALL_WATER(x1, y1, z1, x2, y2, z2, flags, water
 ---@param z float
 ---@param flags int
 ---@param waterHeight float
----@return int
+---@return float waterHeight
 function WATER.TEST_VERTICAL_PROBE_AGAINST_ALL_WATER(x, y, z, flags, waterHeight) end
 
 

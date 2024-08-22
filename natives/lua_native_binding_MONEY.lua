@@ -121,7 +121,7 @@ function MONEY.NETWORK_DEFER_CASH_TRANSACTIONS_UNTIL_SHOP_SAVE() end
 ---@param p1 int
 ---@param amount int
 ---@param p3 int
----@return boolean
+---@return int p3
 function MONEY.CAN_PAY_AMOUNT_TO_BOSS(p0, p1, amount, p3) end
 
 
@@ -663,7 +663,8 @@ function MONEY.NETWORK_SPEND_EARNED_FROM_BANK_AND_WALLETS(amount) end
 ---@param p0 int
 ---@param p1 int
 ---@param p2 string
----@return string
+---@return int p0
+---@return int p1
 function MONEY.PROCESS_CASH_GIFT(p0, p1, p2) end
 
 

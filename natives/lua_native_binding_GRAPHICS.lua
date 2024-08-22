@@ -598,6 +598,8 @@ function GRAPHICS.SET_SCRIPT_GFX_ALIGN_PARAMS(x, y, w, h) end
 ---@param y float
 ---@param calculatedX float
 ---@param calculatedY float
+---@return float calculatedX
+---@return float calculatedY
 function GRAPHICS.GET_SCRIPT_GFX_ALIGN_POSITION(x, y, calculatedX, calculatedY) end
 
 
@@ -779,11 +781,15 @@ function GRAPHICS.QUERY_MOVIE_MESH_SET_STATE(p0) end
 
 ---@param x int
 ---@param y int
+---@return int x
+---@return int y
 function GRAPHICS.GET_SCREEN_RESOLUTION(x, y) end
 
 
 ---@param x int
 ---@param y int
+---@return int x
+---@return int y
 function GRAPHICS.GET_ACTUAL_SCREEN_RESOLUTION(x, y) end
 
 
@@ -844,7 +850,8 @@ function GRAPHICS.SET_NOISINESSOVERIDE(value) end
 ---@param worldZ float
 ---@param screenX float
 ---@param screenY float
----@return boolean
+---@return float screenX
+---@return float screenY
 function GRAPHICS.GET_SCREEN_COORD_FROM_WORLD_COORD(worldX, worldY, worldZ, screenX, screenY) end
 
 
@@ -1855,7 +1862,7 @@ function GRAPHICS.ADD_VEHICLE_CREW_EMBLEM(vehicle, ped, boneIndex, x1, x2, x3, y
 
 
 ---@param p0 int
----@return boolean
+---@return int p0
 function GRAPHICS.ABORT_VEHICLE_CREW_EMBLEM_REQUEST(p0) end
 
 
