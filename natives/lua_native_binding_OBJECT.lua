@@ -15,7 +15,7 @@
 ---@alias Player integer
 ---@alias ScrHandle integer
 ---@alias Vehicle integer
----@alias Any integer
+---@alias Any any
 ---@alias Vector3 vec3
 
 OBJECT = {}
