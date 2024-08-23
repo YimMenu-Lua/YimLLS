@@ -850,6 +850,7 @@ function GRAPHICS.SET_NOISINESSOVERIDE(value) end
 ---@param worldZ float
 ---@param screenX float
 ---@param screenY float
+---@return boolean
 ---@return float screenX
 ---@return float screenY
 function GRAPHICS.GET_SCREEN_COORD_FROM_WORLD_COORD(worldX, worldY, worldZ, screenX, screenY) end
@@ -1862,6 +1863,7 @@ function GRAPHICS.ADD_VEHICLE_CREW_EMBLEM(vehicle, ped, boneIndex, x1, x2, x3, y
 
 
 ---@param p0 int
+---@return boolean
 ---@return int p0
 function GRAPHICS.ABORT_VEHICLE_CREW_EMBLEM_REQUEST(p0) end
 

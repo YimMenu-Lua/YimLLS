@@ -307,6 +307,7 @@ function PLAYER.IS_PLAYER_TARGETTING_ENTITY(player, entity) end
 
 ---@param player Player
 ---@param entity Entity
+---@return boolean
 ---@return Entity entity
 function PLAYER.GET_PLAYER_TARGET_ENTITY(player, entity) end
 
@@ -324,6 +325,7 @@ function PLAYER.IS_PLAYER_FREE_AIMING_AT_ENTITY(player, entity) end
 
 ---@param player Player
 ---@param entity Entity
+---@return boolean
 ---@return Entity entity
 function PLAYER.GET_ENTITY_PLAYER_IS_FREE_AIMING_AT(player, entity) end
 

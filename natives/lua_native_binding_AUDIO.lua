@@ -756,6 +756,7 @@ function AUDIO.IS_RADIO_STATION_FAVOURITED(radioStation) end
 ---@param out1 float
 ---@param out2 float
 ---@param out3 int
+---@return boolean
 ---@return float out1
 ---@return float out2
 ---@return int out3

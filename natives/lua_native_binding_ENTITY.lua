@@ -278,6 +278,7 @@ function ENTITY.GET_ENTITY_ROTATION_VELOCITY(entity) end
 
 ---@param entity Entity
 ---@param script ScrHandle
+---@return string
 ---@return ScrHandle script
 function ENTITY.GET_ENTITY_SCRIPT(entity, script) end
 
@@ -977,6 +978,7 @@ function ENTITY.SET_ENTITY_PROOFS(entity, bulletProof, fireProof, explosionProof
 ---@param steamProof BOOL
 ---@param p7 BOOL
 ---@param drownProof BOOL
+---@return boolean
 ---@return BOOL bulletProof
 ---@return BOOL fireProof
 ---@return BOOL explosionProof

@@ -60,6 +60,7 @@ function PATHFIND.SET_PED_PATHS_IN_AREA(x1, y1, z1, x2, y2, z2, p6, p7) end
 ---@param onGround BOOL
 ---@param outPosition Vector3
 ---@param flags int
+---@return boolean
 ---@return Vector3 outPosition
 function PATHFIND.GET_SAFE_COORD_FOR_PED(x, y, z, onGround, outPosition, flags) end
 
@@ -71,6 +72,7 @@ function PATHFIND.GET_SAFE_COORD_FOR_PED(x, y, z, onGround, outPosition, flags) 
 ---@param nodeFlags int
 ---@param p5 float
 ---@param p6 float
+---@return boolean
 ---@return Vector3 outPosition
 function PATHFIND.GET_CLOSEST_VEHICLE_NODE(x, y, z, outPosition, nodeFlags, p5, p6) end
 
@@ -81,6 +83,7 @@ function PATHFIND.GET_CLOSEST_VEHICLE_NODE(x, y, z, outPosition, nodeFlags, p5, 
 ---@param outPosition Vector3
 ---@param unknown1 float
 ---@param unknown2 float
+---@return boolean
 ---@return Vector3 outPosition
 function PATHFIND.GET_CLOSEST_MAJOR_VEHICLE_NODE(x, y, z, outPosition, unknown1, unknown2) end
 
@@ -93,6 +96,7 @@ function PATHFIND.GET_CLOSEST_MAJOR_VEHICLE_NODE(x, y, z, outPosition, unknown1,
 ---@param nodeType int
 ---@param p6 float
 ---@param p7 float
+---@return boolean
 ---@return Vector3 outPosition
 ---@return float outHeading
 function PATHFIND.GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(x, y, z, outPosition, outHeading, nodeType, p6, p7) end
@@ -106,6 +110,7 @@ function PATHFIND.GET_CLOSEST_VEHICLE_NODE_WITH_HEADING(x, y, z, outPosition, ou
 ---@param nodeFlags int
 ---@param unknown1 float
 ---@param unknown2 float
+---@return boolean
 ---@return Vector3 outPosition
 function PATHFIND.GET_NTH_CLOSEST_VEHICLE_NODE(x, y, z, nthClosest, outPosition, nodeFlags, unknown1, unknown2) end
 
@@ -131,6 +136,7 @@ function PATHFIND.GET_NTH_CLOSEST_VEHICLE_NODE_ID(x, y, z, nth, nodeFlags, p5, p
 ---@param nodeFlags int
 ---@param unknown3 float
 ---@param unknown4 float
+---@return boolean
 ---@return Vector3 outPosition
 ---@return float outHeading
 ---@return int outNumLanes
@@ -146,6 +152,7 @@ function PATHFIND.GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(x, y, z, nthClosest,
 ---@param nodeFlags int
 ---@param p7 float
 ---@param p8 float
+---@return int
 ---@return Vector3 outPosition
 ---@return float outHeading
 function PATHFIND.GET_NTH_CLOSEST_VEHICLE_NODE_ID_WITH_HEADING(x, y, z, nthClosest, outPosition, outHeading, nodeFlags, p7, p8) end
@@ -163,6 +170,7 @@ function PATHFIND.GET_NTH_CLOSEST_VEHICLE_NODE_ID_WITH_HEADING(x, y, z, nthClose
 ---@param nodeFlags int
 ---@param p10 float
 ---@param p11 float
+---@return boolean
 ---@return Vector3 outPosition
 ---@return float outHeading
 function PATHFIND.GET_NTH_CLOSEST_VEHICLE_NODE_FAVOUR_DIRECTION(x, y, z, desiredX, desiredY, desiredZ, nthClosest, outPosition, outHeading, nodeFlags, p10, p11) end
@@ -173,6 +181,7 @@ function PATHFIND.GET_NTH_CLOSEST_VEHICLE_NODE_FAVOUR_DIRECTION(x, y, z, desired
 ---@param z float
 ---@param density int
 ---@param flags int
+---@return boolean
 ---@return int density
 ---@return int flags
 function PATHFIND.GET_VEHICLE_NODE_PROPERTIES(x, y, z, density, flags) end
@@ -209,6 +218,7 @@ function PATHFIND.GET_VEHICLE_NODE_IS_SWITCHED_OFF(nodeID) end
 ---@param p8 number
 ---@param p9 float
 ---@param p10 BOOL
+---@return boolean
 ---@return Vector3 p5
 ---@return Vector3 p6
 ---@return float p9
@@ -298,6 +308,7 @@ function PATHFIND.SET_PED_PATHS_BACK_TO_ORIGINAL(x1, y1, z1, x2, y2, z2, p6) end
 ---@param p6 BOOL
 ---@param outPosition Vector3
 ---@param nodeId int
+---@return boolean
 ---@return Vector3 outPosition
 ---@return int nodeId
 function PATHFIND.GET_RANDOM_VEHICLE_NODE(x, y, z, radius, p4, p5, p6, outPosition, nodeId) end
@@ -309,6 +320,7 @@ function PATHFIND.GET_RANDOM_VEHICLE_NODE(x, y, z, radius, p4, p5, p6, outPositi
 ---@param towardsCoorsZ float
 ---@param centrePoint Vector3
 ---@param heading float
+---@return Vector3
 ---@return Vector3 centrePoint
 ---@return float heading
 function PATHFIND.GET_SPAWN_COORDS_FOR_VEHICLE_NODE(nodeAddress, towardsCoorsX, towardsCoorsY, towardsCoorsZ, centrePoint, heading) end
@@ -331,6 +343,7 @@ function PATHFIND.GET_STREET_NAME_AT_COORD(x, y, z, streetName, crossingRoad) en
 ---@param direction int
 ---@param p5 float
 ---@param distToNxJunction float
+---@return int
 ---@return int direction
 ---@return float p5
 ---@return float distToNxJunction
@@ -362,6 +375,7 @@ function PATHFIND.GET_GPS_BLIP_ROUTE_LENGTH() end
 ---@param p1 BOOL
 ---@param p2 float
 ---@param p3 int
+---@return boolean
 ---@return Vector3 result
 function PATHFIND.GET_POS_ALONG_GPS_TYPE_ROUTE(result, p1, p2, p3) end
 
@@ -375,6 +389,7 @@ function PATHFIND.GET_GPS_BLIP_ROUTE_FOUND() end
 ---@param z float
 ---@param heading float
 ---@param outPosition Vector3
+---@return boolean
 ---@return Vector3 outPosition
 function PATHFIND.GET_ROAD_BOUNDARY_USING_HEADING(x, y, z, heading, outPosition) end
 
@@ -384,6 +399,7 @@ function PATHFIND.GET_ROAD_BOUNDARY_USING_HEADING(x, y, z, heading, outPosition)
 ---@param z float
 ---@param p3 int
 ---@param outPosition Vector3
+---@return boolean
 ---@return Vector3 outPosition
 function PATHFIND.GET_POSITION_BY_SIDE_OF_ROAD(x, y, z, p3, outPosition) end
 

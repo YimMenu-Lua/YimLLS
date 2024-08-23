@@ -69,6 +69,7 @@ function FIRE.STOP_FIRE_IN_RANGE(x, y, z, radius) end
 ---@param x float
 ---@param y float
 ---@param z float
+---@return boolean
 ---@return Vector3 outPosition
 function FIRE.GET_CLOSEST_FIRE_POS(outPosition, x, y, z) end
 

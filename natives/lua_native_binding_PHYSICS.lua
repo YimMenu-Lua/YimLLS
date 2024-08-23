@@ -49,6 +49,7 @@ function PHYSICS.DELETE_CHILD_ROPE(ropeId) end
 
 
 ---@param ropeId int
+---@return boolean
 ---@return int ropeId
 function PHYSICS.DOES_ROPE_EXIST(ropeId) end
 
@@ -132,6 +133,7 @@ function PHYSICS.ROPE_SET_SMOOTH_REELIN(ropeId, p1) end
 
 
 ---@param ropeId int
+---@return boolean
 ---@return int ropeId
 function PHYSICS.IS_ROPE_ATTACHED_AT_BOTH_ENDS(ropeId) end
 

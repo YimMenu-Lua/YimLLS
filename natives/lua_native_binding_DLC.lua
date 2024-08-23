@@ -54,6 +54,7 @@ function DLC.GET_IS_INITIAL_LOADING_SCREEN_ACTIVE() end
 
 ---@param p0 BOOL
 ---@param unused int
+---@return boolean
 ---@return BOOL p0
 function DLC.HAS_CLOUD_REQUESTS_FINISHED(p0, unused) end
 

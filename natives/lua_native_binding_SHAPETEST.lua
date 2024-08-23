@@ -109,6 +109,7 @@ function SHAPETEST.START_SHAPE_TEST_SWEPT_SPHERE(x1, y1, z1, x2, y2, z2, radius,
 ---@param flag int
 ---@param entity Entity
 ---@param flag2 int
+---@return int
 ---@return Vector3 pVec1
 ---@return Vector3 pVec2
 function SHAPETEST.START_SHAPE_TEST_MOUSE_CURSOR_LOS_PROBE(pVec1, pVec2, flag, entity, flag2) end
@@ -119,6 +120,7 @@ function SHAPETEST.START_SHAPE_TEST_MOUSE_CURSOR_LOS_PROBE(pVec1, pVec2, flag, e
 ---@param endCoords Vector3
 ---@param surfaceNormal Vector3
 ---@param entityHit Entity
+---@return int
 ---@return BOOL hit
 ---@return Vector3 endCoords
 ---@return Vector3 surfaceNormal
@@ -132,6 +134,7 @@ function SHAPETEST.GET_SHAPE_TEST_RESULT(shapeTestHandle, hit, endCoords, surfac
 ---@param surfaceNormal Vector3
 ---@param materialHash Hash
 ---@param entityHit Entity
+---@return int
 ---@return BOOL hit
 ---@return Vector3 endCoords
 ---@return Vector3 surfaceNormal

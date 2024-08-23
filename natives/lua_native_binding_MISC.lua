@@ -353,6 +353,7 @@ function MISC.GET_RANDOM_MWC_INT_IN_RANGE(startRange, endRange) end
 ---@param groundZ float
 ---@param ignoreWater BOOL
 ---@param p5 BOOL
+---@return boolean
 ---@return float groundZ
 function MISC.GET_GROUND_Z_FOR_3D_COORD(x, y, z, groundZ, ignoreWater, p5) end
 
@@ -362,6 +363,7 @@ function MISC.GET_GROUND_Z_FOR_3D_COORD(x, y, z, groundZ, ignoreWater, p5) end
 ---@param z float
 ---@param groundZ float
 ---@param normal Vector3
+---@return boolean
 ---@return float groundZ
 ---@return Vector3 normal
 function MISC.GET_GROUND_Z_AND_NORMAL_FOR_3D_COORD(x, y, z, groundZ, normal) end
@@ -373,6 +375,7 @@ function MISC.GET_GROUND_Z_AND_NORMAL_FOR_3D_COORD(x, y, z, groundZ, normal) end
 ---@param groundZ float
 ---@param p4 BOOL
 ---@param p5 BOOL
+---@return boolean
 ---@return float groundZ
 function MISC.GET_GROUND_Z_EXCLUDING_OBJECTS_FOR_3D_COORD(x, y, z, groundZ, p4, p5) end
 
@@ -469,6 +472,7 @@ function MISC.GET_CLOSEST_POINT_ON_LINE(x1, y1, z1, x2, y2, z2, x3, y3, z3, clam
 ---@param p10 float
 ---@param p11 float
 ---@param p12 float
+---@return boolean
 ---@return float p12
 function MISC.GET_LINE_PLANE_INTERSECTION(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12) end
 
@@ -800,6 +804,7 @@ function MISC.OVERRIDE_SAVE_HOUSE(p0, p1, p2, p3, p4, p5, p6, p7) end
 ---@param p1 float
 ---@param fadeInAfterLoad BOOL
 ---@param p3 BOOL
+---@return boolean
 ---@return Vector3 p0
 ---@return float p1
 ---@return BOOL fadeInAfterLoad
@@ -1077,6 +1082,7 @@ function MISC.IS_PROJECTILE_TYPE_WITHIN_DISTANCE(x, y, z, projectileHash, radius
 ---@param projectileHash Hash
 ---@param projectilePos Vector3
 ---@param ownedByPlayer BOOL
+---@return boolean
 ---@return Vector3 projectilePos
 function MISC.GET_COORDS_OF_PROJECTILE_TYPE_IN_AREA(x1, y1, z1, x2, y2, z2, projectileHash, projectilePos, ownedByPlayer) end
 
@@ -1091,6 +1097,7 @@ function MISC.GET_COORDS_OF_PROJECTILE_TYPE_IN_AREA(x1, y1, z1, x2, y2, z2, proj
 ---@param weaponType Hash
 ---@param positionOut Vector3
 ---@param bIsPlayer BOOL
+---@return boolean
 ---@return Vector3 positionOut
 function MISC.GET_COORDS_OF_PROJECTILE_TYPE_IN_ANGLED_AREA(vecAngledAreaPoint1X, vecAngledAreaPoint1Y, vecAngledAreaPoint1Z, vecAngledAreaPoint2X, vecAngledAreaPoint2Y, vecAngledAreaPoint2Z, distanceOfOppositeFace, weaponType, positionOut, bIsPlayer) end
 
@@ -1100,6 +1107,7 @@ function MISC.GET_COORDS_OF_PROJECTILE_TYPE_IN_ANGLED_AREA(vecAngledAreaPoint1X,
 ---@param distance float
 ---@param outCoords Vector3
 ---@param p4 BOOL
+---@return boolean
 ---@return Vector3 outCoords
 function MISC.GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(ped, weaponHash, distance, outCoords, p4) end
 
@@ -1110,6 +1118,7 @@ function MISC.GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(ped, weaponHash, dis
 ---@param outCoords Vector3
 ---@param outProjectile Object
 ---@param p5 BOOL
+---@return boolean
 ---@return Vector3 outCoords
 ---@return Object outProjectile
 function MISC.GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(ped, weaponHash, distance, outCoords, outProjectile, p5) end
@@ -1229,6 +1238,7 @@ function MISC.IS_STRING_NULL_OR_EMPTY(string) end
 
 ---@param string string
 ---@param outInteger int
+---@return boolean
 ---@return int outInteger
 function MISC.STRING_TO_INT(string, outInteger) end
 
@@ -1494,6 +1504,7 @@ function MISC.GET_NUMBER_RESOURCES_ALLOCATED_TO_WANTED_LEVEL(dispatchService) en
 ---@param outIncidentID int
 ---@param p7 Any
 ---@param p8 Any
+---@return boolean
 ---@return int outIncidentID
 function MISC.CREATE_INCIDENT(dispatchService, x, y, z, numUnits, radius, outIncidentID, p7, p8) end
 
@@ -1505,6 +1516,7 @@ function MISC.CREATE_INCIDENT(dispatchService, x, y, z, numUnits, radius, outInc
 ---@param outIncidentID int
 ---@param p5 Any
 ---@param p6 Any
+---@return boolean
 ---@return int outIncidentID
 function MISC.CREATE_INCIDENT_WITH_ENTITY(dispatchService, ped, numUnits, radius, outIncidentID, p5, p6) end
 
@@ -1537,6 +1549,7 @@ function MISC.SET_IDEAL_SPAWN_DISTANCE_FOR_INCIDENT(incidentId, p1) end
 ---@param fwdVecZ float
 ---@param distance float
 ---@param spawnPoint Vector3
+---@return boolean
 ---@return Vector3 spawnPoint
 function MISC.FIND_SPAWN_POINT_IN_DIRECTION(posX, posY, posZ, fwdVecX, fwdVecY, fwdVecZ, distance, spawnPoint) end
 
@@ -1835,6 +1848,7 @@ function MISC.SCRIPT_RACE_PLAYER_HIT_CHECKPOINT(player, p1, p2, p3) end
 ---@param player Player
 ---@param p1 int
 ---@param p2 int
+---@return boolean
 ---@return int p1
 ---@return int p2
 function MISC.SCRIPT_RACE_GET_PLAYER_SPLIT_TIME(player, p1, p2) end

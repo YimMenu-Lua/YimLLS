@@ -155,6 +155,7 @@ function OBJECT.GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(xPos, yPos, zP
 ---@param outPosition Vector3
 ---@param outRotation Vector3
 ---@param rotationOrder int
+---@return boolean
 ---@return Vector3 outPosition
 ---@return Vector3 outRotation
 function OBJECT.GET_COORDS_AND_ROTATION_OF_CLOSEST_OBJECT_OF_TYPE(x, y, z, radius, modelHash, outPosition, outRotation, rotationOrder) end
@@ -305,6 +306,7 @@ function OBJECT.DOOR_SYSTEM_GET_IS_PHYSICS_LOADED(p0) end
 ---@param z float
 ---@param modelHash Hash
 ---@param outDoorHash Hash
+---@return boolean
 ---@return Hash outDoorHash
 function OBJECT.DOOR_SYSTEM_FIND_EXISTING_DOOR(x, y, z, modelHash, outDoorHash) end
 

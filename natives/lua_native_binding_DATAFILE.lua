@@ -162,6 +162,7 @@ function DATAFILE.DATAFILE_START_SAVE_TO_CLOUD(filename, p1) end
 
 
 ---@param p0 BOOL
+---@return boolean
 ---@return BOOL p0
 function DATAFILE.DATAFILE_UPDATE_SAVE_TO_CLOUD(p0) end
 

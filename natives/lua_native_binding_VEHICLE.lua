@@ -576,6 +576,7 @@ function VEHICLE.GET_LAST_PED_IN_VEHICLE_SEAT(vehicle, seatIndex) end
 ---@param vehicle Vehicle
 ---@param lightsOn BOOL
 ---@param highbeamsOn BOOL
+---@return boolean
 ---@return BOOL lightsOn
 ---@return BOOL highbeamsOn
 function VEHICLE.GET_VEHICLE_LIGHTS_STATE(vehicle, lightsOn, highbeamsOn) end
@@ -2158,6 +2159,7 @@ function VEHICLE.SET_DISABLE_VERTICAL_FLIGHT_MODE_TRANSITION(vehicle, toggle) en
 ---@param p6 Any
 ---@param p7 Any
 ---@param p8 Any
+---@return boolean
 ---@return Vector3 outVec
 ---@return Vector3 outVec1
 function VEHICLE.GENERATE_VEHICLE_CREATION_POS_FROM_PATHS(outVec, p1, outVec1, p3, p4, p5, p6, p7, p8) end
@@ -2226,6 +2228,7 @@ function VEHICLE.NETWORK_CAP_EMPTY_CROWDING_VEHICLES_REMOVAL(p0) end
 
 ---@param vehicle Vehicle
 ---@param trailer Vehicle
+---@return boolean
 ---@return Vehicle trailer
 function VEHICLE.GET_VEHICLE_TRAILER_VEHICLE(vehicle, trailer) end
 
@@ -2846,6 +2849,7 @@ function VEHICLE.SET_VEHICLE_SHOOT_AT_TARGET(driver, entity, xTarget, yTarget, z
 
 ---@param vehicle Vehicle
 ---@param entity Entity
+---@return boolean
 ---@return Entity entity
 function VEHICLE.GET_VEHICLE_LOCK_ON_TARGET(vehicle, entity) end
 
@@ -3278,6 +3282,7 @@ function VEHICLE.SET_VEHICLE_EXCLUSIVE_DRIVER(vehicle, ped, index) end
 ---@param ped Ped
 ---@param vehicle Vehicle
 ---@param outIndex int
+---@return boolean
 ---@return int outIndex
 function VEHICLE.IS_PED_EXCLUSIVE_DRIVER_OF_VEHICLE(ped, vehicle, outIndex) end
 
@@ -4147,6 +4152,7 @@ function VEHICLE.GET_VEHICLE_MAX_EXHAUST_BONE_COUNT_() end
 ---@param index int
 ---@param boneIndex int
 ---@param axisX BOOL
+---@return boolean
 ---@return int boneIndex
 ---@return BOOL axisX
 function VEHICLE.GET_VEHICLE_EXHAUST_BONE_(vehicle, index, boneIndex, axisX) end

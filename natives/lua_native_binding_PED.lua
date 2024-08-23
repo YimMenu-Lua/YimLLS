@@ -488,6 +488,7 @@ function PED.SET_PED_CAN_BE_SHOT_IN_VEHICLE(ped, toggle) end
 
 ---@param ped Ped
 ---@param outBone int
+---@return boolean
 ---@return int outBone
 function PED.GET_PED_LAST_DAMAGE_BONE(ped, outBone) end
 
@@ -945,6 +946,7 @@ function PED.CLEAR_RELATIONSHIP_BETWEEN_GROUPS(relationship, group1, group2) end
 
 ---@param name string
 ---@param groupHash Hash
+---@return boolean
 ---@return Hash groupHash
 function PED.ADD_RELATIONSHIP_GROUP(name, groupHash) end
 
@@ -1871,6 +1873,7 @@ function PED.GET_RANDOM_PED_AT_COORD(x, y, z, xRadius, yRadius, zRadius, pedType
 ---@param p7 BOOL
 ---@param p8 BOOL
 ---@param pedType int
+---@return boolean
 ---@return Ped outPed
 function PED.GET_CLOSEST_PED(x, y, z, radius, p4, p5, outPed, p7, p8, pedType) end
 
@@ -2563,6 +2566,7 @@ function PED.SET_PED_CAN_EVASIVE_DIVE(ped, toggle) end
 
 ---@param ped Ped
 ---@param evadingEntity Entity
+---@return boolean
 ---@return Entity evadingEntity
 function PED.IS_PED_EVASIVE_DIVING(ped, evadingEntity) end
 
@@ -2932,12 +2936,14 @@ function PED.CAN_PED_SEE_HATED_PED(ped1, ped2) end
 
 ---@param ped Ped
 ---@param p1 int
+---@return boolean
 ---@return int p1
 function PED.CAN_PED_SHUFFLE_TO_OR_FROM_TURRET_SEAT(ped, p1) end
 
 
 ---@param ped Ped
 ---@param p1 int
+---@return boolean
 ---@return int p1
 function PED.CAN_PED_SHUFFLE_TO_OR_FROM_EXTRA_SEAT(ped, p1) end
 
@@ -3118,6 +3124,7 @@ function PED.FORCE_PED_MOTION_STATE(ped, motionStateHash, p2, p3, p4) end
 ---@param ped Ped
 ---@param speedX float
 ---@param speedY float
+---@return boolean
 ---@return float speedX
 ---@return float speedY
 function PED.GET_PED_CURRENT_MOVE_BLEND_RATIO(ped, speedX, speedY) end

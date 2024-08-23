@@ -365,6 +365,7 @@ function TASK.SET_GLOBAL_MIN_BIRD_FLIGHT_HEIGHT(height) end
 ---@param ped Ped
 ---@param distanceRemaining float
 ---@param isPathReady BOOL
+---@return int
 ---@return float distanceRemaining
 ---@return BOOL isPathReady
 function TASK.GET_NAVMESH_ROUTE_DISTANCE_REMAINING(ped, distanceRemaining, isPathReady) end
@@ -1621,6 +1622,7 @@ function TASK.DELETE_PATROL_ROUTE(patrolRoute) end
 ---@param ped Ped
 ---@param timeLeftAtNode int
 ---@param nodeId int
+---@return boolean
 ---@return int timeLeftAtNode
 ---@return int nodeId
 function TASK.GET_PATROL_TASK_INFO(ped, timeLeftAtNode, nodeId) end
@@ -1790,6 +1792,7 @@ function TASK.REMOVE_WAYPOINT_RECORDING(name) end
 
 ---@param name string
 ---@param points int
+---@return boolean
 ---@return int points
 function TASK.WAYPOINT_RECORDING_GET_NUM_POINTS(name, points) end
 
@@ -1797,6 +1800,7 @@ function TASK.WAYPOINT_RECORDING_GET_NUM_POINTS(name, points) end
 ---@param name string
 ---@param point int
 ---@param coord Vector3
+---@return boolean
 ---@return Vector3 coord
 function TASK.WAYPOINT_RECORDING_GET_COORD(name, point, coord) end
 
@@ -1812,6 +1816,7 @@ function TASK.WAYPOINT_RECORDING_GET_SPEED_AT_POINT(name, point) end
 ---@param y float
 ---@param z float
 ---@param point int
+---@return boolean
 ---@return int point
 function TASK.WAYPOINT_RECORDING_GET_CLOSEST_WAYPOINT(name, x, y, z, point) end
 

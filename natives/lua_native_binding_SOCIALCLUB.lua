@@ -41,6 +41,7 @@ function SOCIALCLUB.SC_INBOX_SET_MESSAGE_AS_READ_AT_INDEX(msgIndex) end
 ---@param p0 int
 ---@param context string
 ---@param out int
+---@return boolean
 ---@return int out
 function SOCIALCLUB.SC_INBOX_MESSAGE_GET_DATA_INT(p0, context, out) end
 
@@ -54,6 +55,7 @@ function SOCIALCLUB.SC_INBOX_MESSAGE_GET_DATA_BOOL(p0, p1) end
 ---@param p0 int
 ---@param context string
 ---@param out char
+---@return boolean
 ---@return char out
 function SOCIALCLUB.SC_INBOX_MESSAGE_GET_DATA_STRING(p0, context, out) end
 
@@ -170,12 +172,14 @@ function SOCIALCLUB.SC_PRESENCE_SET_ACTIVITY_RATING(p0, p1) end
 
 ---@param name string
 ---@param value int
+---@return boolean
 ---@return int value
 function SOCIALCLUB.SC_GAMERDATA_GET_INT(name, value) end
 
 
 ---@param name string
 ---@param value float
+---@return boolean
 ---@return float value
 function SOCIALCLUB.SC_GAMERDATA_GET_FLOAT(name, value) end
 
@@ -187,23 +191,27 @@ function SOCIALCLUB.SC_GAMERDATA_GET_BOOL(name) end
 
 ---@param name string
 ---@param value char
+---@return boolean
 ---@return char value
 function SOCIALCLUB.SC_GAMERDATA_GET_STRING(name, value) end
 
 
 ---@param value float
+---@return boolean
 ---@return float value
 function SOCIALCLUB.SC_GAMERDATA_GET_ACTIVE_XP_BONUS(value) end
 
 
 ---@param string string
 ---@param token int
+---@return boolean
 ---@return int token
 function SOCIALCLUB.SC_PROFANITY_CHECK_STRING(string, token) end
 
 
 ---@param string string
 ---@param token int
+---@return boolean
 ---@return int token
 function SOCIALCLUB.SC_PROFANITY_CHECK_STRING_UGC(string, token) end
 
@@ -230,12 +238,14 @@ function SOCIALCLUB.SC_PROFANITY_GET_STRING_STATUS(token) end
 
 ---@param token int
 ---@param outProfaneWord char
+---@return boolean
 ---@return char outProfaneWord
 function SOCIALCLUB.SC_PROFANITY_GET_PROFANE_WORD(token, outProfaneWord) end
 
 
 ---@param p0 string
 ---@param p1 int
+---@return boolean
 ---@return int p1
 function SOCIALCLUB.SC_LICENSEPLATE_CHECK_STRING(p0, p1) end
 
@@ -277,6 +287,7 @@ function SOCIALCLUB.SC_LICENSEPLATE_SET_PLATE_DATA(oldPlateText, newPlateText, p
 ---@param plateText string
 ---@param plateData number
 ---@param token int
+---@return boolean
 ---@return int token
 function SOCIALCLUB.SC_LICENSEPLATE_ADD(plateText, plateData, token) end
 
@@ -293,6 +304,7 @@ function SOCIALCLUB.SC_LICENSEPLATE_GET_ADD_STATUS(token) end
 
 ---@param plateText string
 ---@param token int
+---@return boolean
 ---@return int token
 function SOCIALCLUB.SC_LICENSEPLATE_ISVALID(plateText, token) end
 
@@ -317,23 +329,27 @@ function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EVENT_ID() end
 
 ---@param p0 string
 ---@param p1 int
+---@return boolean
 ---@return int p1
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT(p0, p1) end
 
 
 ---@param p0 string
 ---@param p1 float
+---@return boolean
 ---@return float p1
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT(p0, p1) end
 
 
 ---@param p0 string
 ---@param p1 char
+---@return boolean
 ---@return char p1
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_STRING(p0, p1) end
 
 
 ---@param p0 char
+---@return boolean
 ---@return char p0
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_DISPLAY_NAME(p0) end
 
@@ -351,6 +367,7 @@ function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EVENT_ID_FOR_TYPE(p0) end
 ---@param p0 string
 ---@param p1 int
 ---@param p2 string
+---@return boolean
 ---@return int p1
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT_FOR_TYPE(p0, p1, p2) end
 
@@ -358,6 +375,7 @@ function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT_FOR_TYPE(p0, p1, p2) e
 ---@param p0 string
 ---@param p1 float
 ---@param p2 string
+---@return boolean
 ---@return float p1
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT_FOR_TYPE(p0, p1, p2) end
 
@@ -365,12 +383,14 @@ function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT_FOR_TYPE(p0, p1, p2)
 ---@param p0 string
 ---@param p1 char
 ---@param p2 string
+---@return boolean
 ---@return char p1
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_STRING_FOR_TYPE(p0, p1, p2) end
 
 
 ---@param p0 char
 ---@param p1 string
+---@return boolean
 ---@return char p0
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_DISPLAY_NAME_FOR_TYPE(p0, p1) end
 
@@ -383,6 +403,7 @@ function SOCIALCLUB.SC_COMMUNITY_EVENT_IS_ACTIVE_BY_ID(p0) end
 ---@param p0 int
 ---@param p1 string
 ---@param p2 int
+---@return boolean
 ---@return int p2
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT_BY_ID(p0, p1, p2) end
 
@@ -390,6 +411,7 @@ function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT_BY_ID(p0, p1, p2) end
 ---@param p0 int
 ---@param p1 string
 ---@param p2 float
+---@return boolean
 ---@return float p2
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT_BY_ID(p0, p1, p2) end
 
@@ -397,12 +419,14 @@ function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT_BY_ID(p0, p1, p2) en
 ---@param p0 int
 ---@param p1 string
 ---@param p2 char
+---@return boolean
 ---@return char p2
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_EXTRA_DATA_STRING_BY_ID(p0, p1, p2) end
 
 
 ---@param p0 int
 ---@param p1 char
+---@return boolean
 ---@return char p1
 function SOCIALCLUB.SC_COMMUNITY_EVENT_GET_DISPLAY_NAME_BY_ID(p0, p1) end
 
@@ -428,6 +452,7 @@ function SOCIALCLUB.SC_TRANSITION_NEWS_HAS_EXTRA_DATA_TU() end
 
 ---@param p0 string
 ---@param p1 int
+---@return boolean
 ---@return int p1
 function SOCIALCLUB.SC_TRANSITION_NEWS_GET_EXTRA_DATA_INT_TU(p0, p1) end
 
@@ -453,6 +478,7 @@ function SOCIALCLUB.SC_ACCOUNT_INFO_GET_NICKNAME() end
 
 
 ---@param p0 int
+---@return boolean
 ---@return int p0
 function SOCIALCLUB.SC_ACHIEVEMENT_INFO_STATUS(p0) end
 
