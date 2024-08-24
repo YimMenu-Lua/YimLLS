@@ -14,6 +14,5 @@ Refer to LuaLS docs.
 
 # Source
 Generated with [gen_lua_natives.py](https://github.com/TupoyeMenu/TupoyeMenu/blob/lite/scripts/gen_lua_natives.py) and [lua_doc_gen.py](https://github.com/TupoyeMenu/TupoyeMenu/blob/lite/scripts/lua_doc_gen.py).
-ImGui.lua is written manually and is not accurate.
 
 Scripts are based on `natives_gen.py` and `doc_gen.py` by [xiaoxiao921](https://github.com/xiaoxiao921).
