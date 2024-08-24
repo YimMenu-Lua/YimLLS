@@ -2,22 +2,15 @@
 ---@class io
 ---Table for file manipulation. Modified for security purposes.
 io = {}
--- Functions (2)
+-- Functions (1)
 
 ---**Example Usage:**
 ---```lua
----file_handle = io.open()
+---boolean = io.exists(filename)
 ---```
----@return file_handle file handle or nil if can't read / write to the given path.
-function io.open() end
-
-
----**Example Usage:**
----```lua
----boolean = io.exists()
----```
----@return boolean True if the passed file path exists
-function io.exists() end
+---@param filename string
+---@return boolean exists: True if the passed file path exists
+function io.exists(filename) end
 
 
 

@@ -2,7 +2,7 @@
 ---@class script
 ---Table containing helper functions related to gta scripts.
 script = {}
--- Functions (6)
+-- Functions (5)
 
 ---Registers a function that will be looped as a gta script.
 ---**Example Usage:**
@@ -89,23 +89,6 @@ function script.is_active(script_name) end
 ---@param script_name string Target script thread.
 ---@param func function Function that will be executed once in the script thread.
 function script.execute_as_script(script_name, func) end
-
-
----Adds a patch for the specified script.
----**Example Usage:**
----```lua
----script.add_patch("fm_content_xmas_truck", "Flickering Fix", "56 ? ? 4F ? ? 40 ? 5D ? ? ? 74", 0, {0x2B, 0x00, 0x00})
----```
----**Example Usage:**
----```lua
----script.add_patch(script_name, name, pattern, offset, _patch)
----```
----@param script_name string The name of the script.
----@param name string The name of the patch.
----@param pattern string The pattern to scan for within the script.
----@param offset integer The position within the pattern.
----@param _patch table The bytes to be written into the script's bytecode.
-function script.add_patch(script_name, name, pattern, offset, _patch) end
 
 
 ---Tries to start a launcher script. Needs to be called in the fiber pool or a loop.

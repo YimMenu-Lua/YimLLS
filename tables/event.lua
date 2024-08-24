@@ -9,7 +9,7 @@ event = {}
 ---```lua
 ---event.register_handler(menu_event, func)
 ---```
----@param menu_event menu_event The menu_event that we want to respond to.
+---@param menu_event integer The menu_event that we want to respond to.
 ---@param func function The function that will be called.
 function event.register_handler(menu_event, func) end
 
