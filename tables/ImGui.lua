@@ -4,7 +4,7 @@
 ---@alias ImGuiTableSortSpecs any
 ---@alias ImGuiStyle any
 
-ImGui = {}\n
+ImGui = {}
 
 ---@param name string
 ---@return boolean
