@@ -9,18 +9,18 @@ locals = {}
 ---integer = locals.get_int(script, index)
 ---```
 ---@param script string The name of the script
----@param index index Index of the script local.
+---@param index integer Index of the script local.
 ---@return integer The value of the given local.
 function locals.get_int(script, index) end
 
 
 ---**Example Usage:**
 ---```lua
----unsigned integer = locals.get_uint(script, index)
+---integer = locals.get_uint(script, index)
 ---```
 ---@param script string The name of the script
----@param index index Index of the script local.
----@return unsigned integer The value of the given local.
+---@param index integer Index of the script local.
+---@return integer The value of the given local.
 function locals.get_uint(script, index) end
 
 
@@ -29,7 +29,7 @@ function locals.get_uint(script, index) end
 ---float = locals.get_float(script, index)
 ---```
 ---@param script string The name of the script
----@param index index Index of the script local.
+---@param index integer Index of the script local.
 ---@return float The value of the given local.
 function locals.get_float(script, index) end
 
@@ -39,7 +39,7 @@ function locals.get_float(script, index) end
 ---Vector3 = locals.get_vec3(script, index)
 ---```
 ---@param script string The name of the script
----@param index index Index of the script local.
+---@param index integer Index of the script local.
 ---@return Vector3 The value of the given local.
 function locals.get_vec3(script, index) end
 
@@ -49,7 +49,7 @@ function locals.get_vec3(script, index) end
 ---locals.set_int(script, index, val)
 ---```
 ---@param script string The name of the script
----@param index index Index of the script local.
+---@param index integer Index of the script local.
 ---@param val integer The new value of the given local.
 function locals.set_int(script, index, val) end
 
@@ -59,8 +59,8 @@ function locals.set_int(script, index, val) end
 ---locals.set_int(script, index, val)
 ---```
 ---@param script string The name of the script
----@param index index Index of the script local.
----@param val unsigned integer The new value of the given local.
+---@param index integer Index of the script local.
+---@param val integer The new value of the given local.
 function locals.set_int(script, index, val) end
 
 
@@ -69,7 +69,7 @@ function locals.set_int(script, index, val) end
 ---locals.set_float(script, index, val)
 ---```
 ---@param script string The name of the script
----@param index index Index of the script local.
+---@param index integer Index of the script local.
 ---@param val float The new value of the given local.
 function locals.set_float(script, index, val) end
 
@@ -79,7 +79,7 @@ function locals.set_float(script, index, val) end
 ---locals.set_vec3(script, index, val)
 ---```
 ---@param script string The name of the script
----@param index index Index of the script local.
+---@param index integer Index of the script local.
 ---@param val Vector3 The new value of the given local.
 function locals.set_vec3(script, index, val) end
 
@@ -89,7 +89,7 @@ function locals.set_vec3(script, index, val) end
 ---pointer = locals.get_pointer(script, index)
 ---```
 ---@param script string The name of the script
----@param index index Index of the script local.
+---@param index integer Index of the script local.
 ---@return pointer The pointer to the given local.
 function locals.get_pointer(script, index) end
 
