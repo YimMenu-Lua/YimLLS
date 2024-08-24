@@ -229,7 +229,7 @@ function stats.get_packed_stat_bool(index) end
 ---stats.set_packed_stat_bool(index, value)
 ---```
 ---@param index int packed stat's index.
----@param value bool value to set the packed stat to.
+---@param value boolean value to set the packed stat to.
 function stats.set_packed_stat_bool(index, value) end
 
 

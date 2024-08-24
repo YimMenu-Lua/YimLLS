@@ -1,6 +1,6 @@
 ---@meta
----@class lua_patch
 ---Class representing a in-memory patch.
+---@class lua_patch
 lua_patch = {}
 -- Functions (2)
 

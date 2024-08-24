@@ -1,6 +1,6 @@
 ---@meta
----@class checkbox: base_text_element
 ---Class representing a gui checkbox.
+---@class checkbox: base_text_element
 checkbox = {}
 -- Functions (2)
 

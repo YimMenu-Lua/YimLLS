@@ -1,6 +1,6 @@
 ---@meta
----@class script_util
 ---Class for gta script utils, the instance is usually given to you.
+---@class script_util
 script_util = {}
 -- Functions (2)
 

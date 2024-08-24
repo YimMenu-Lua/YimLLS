@@ -1,6 +1,6 @@
 ---@meta
----@class base_text_element
 ---Class representing a gui text element.
+---@class base_text_element
 base_text_element = {}
 -- Functions (2)
 

@@ -1,6 +1,6 @@
 ---@meta
----@class input_string: base_text_element
 ---Class for representing an input field for editing a string value within the GUI.
+---@class input_string: base_text_element
 input_string = {}
 -- Functions (2)
 

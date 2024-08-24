@@ -1,6 +1,6 @@
 ---@meta
----@class input_float: base_text_element
 ---Class for representing an input field for editing a float value within the GUI.
+---@class input_float: base_text_element
 input_float = {}
 -- Functions (2)
 

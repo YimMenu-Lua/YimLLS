@@ -1,6 +1,6 @@
 ---@meta
----@class tab
 ---Class for representing a tab within the GUI.
+---@class tab
 tab = {}
 -- Functions (12)
 

@@ -1,6 +1,6 @@
 ---@meta
----@class pointer
 ---Class representing a 64-bit memory address.
+---@class pointer
 pointer = {}
 -- Constructors (1)
 
@@ -10,6 +10,7 @@ pointer = {}
 ---myInstance = pointer:new(address)
 ---```
 ---@param address integer Address
+---@return pointer
 function pointer:new(address) end
 
 -- Functions (26)

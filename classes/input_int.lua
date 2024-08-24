@@ -1,6 +1,6 @@
 ---@meta
----@class input_int: base_text_element
 ---Class for representing an input field for editing an integer value within the GUI.
+---@class input_int: base_text_element
 input_int = {}
 -- Functions (2)
 

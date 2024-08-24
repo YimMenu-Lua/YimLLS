@@ -1,6 +1,6 @@
 ---@meta
----@class value_wrapper
 ---Class for wrapping parameters and return value of functions, used mostly by the dynamic_hook system.
+---@class value_wrapper
 value_wrapper = {}
 -- Functions (2)
 

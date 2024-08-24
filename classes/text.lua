@@ -1,6 +1,6 @@
 ---@meta
----@class text: base_text_element
 ---Class representing an imgui text element.
+---@class text: base_text_element
 text = {}
 -- Functions (1)
 
