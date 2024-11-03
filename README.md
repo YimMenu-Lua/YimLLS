@@ -13,6 +13,6 @@ Technically uses TupoyeMenu Lua API but most bindings should be the same.
 Refer to LuaLS docs.
 
 # Source
-Generated with [gen_lua_natives.py](https://github.com/TupoyeMenu/TupoyeMenu/blob/lite/scripts/gen_lua_natives.py) and [lua_doc_gen.py](https://github.com/TupoyeMenu/TupoyeMenu/blob/lite/scripts/lua_doc_gen.py).
+Generated with [gen_lua_natives.py](scripts/gen_lua_natives.py) and [lua_doc_gen.py](scripts/lua_doc_gen.py).
 
 Scripts are based on `natives_gen.py` and `doc_gen.py` by [xiaoxiao921](https://github.com/xiaoxiao921).
